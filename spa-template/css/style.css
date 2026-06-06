@@ -216,6 +216,7 @@ a:hover {
 .c1 { width: 350px; height: 350px; background: rgba(224,137,6,.12); top: -80px; right: -80px; }
 .c2 { width: 300px; height: 300px; background: rgba(16,185,129,.07); bottom: -60px; left: -60px; }
 .c3 { width: 150px; height: 150px; background: rgba(224,137,6,.06); top: 35%; left: 12%; }
+<<<<<<< HEAD
 .image-slider {
     position: absolute;
     right: 7%;
@@ -233,6 +234,8 @@ a:hover {
     object-fit: cover;
     display: block;
 }
+=======
+>>>>>>> a955f3f563dc387e0cc0a2d11eacf79ce229a404
 
 /* ---- SECTIONS ---- */
 .section {
@@ -1048,4 +1051,8 @@ tbody tr:hover { background: rgba(255,255,255,.02); }
     .stats { grid-template-columns: 1fr; }
     .content { padding: 20px; }
     .auth-card { padding: 25px; }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> a955f3f563dc387e0cc0a2d11eacf79ce229a404

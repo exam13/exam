@@ -15,6 +15,7 @@ let allAdminRequests = [];
 let allAdminReviews = [];
 let adminStatusFilter = 'all';
 
+<<<<<<< HEAD
 // Пути к картинкам для слайдера. Чтобы заменить изображения, поменяйте эти строки.
 const sliderImages = [
     'images/slide-1.svg',
@@ -22,6 +23,8 @@ const sliderImages = [
     'images/slide-3.svg'
 ];
 
+=======
+>>>>>>> a955f3f563dc387e0cc0a2d11eacf79ce229a404
 /** Экранирование HTML (защита от XSS). */
 function sanitize(str) {
     if (str == null) return '';
@@ -110,6 +113,7 @@ function initFaqAccordion() {
     });
 }
 
+<<<<<<< HEAD
 function initImageSlider() {
     const image = document.getElementById('slider-image');
     if (!image || sliderImages.length === 0) return;
@@ -123,6 +127,8 @@ function initImageSlider() {
     }, 3000);
 }
 
+=======
+>>>>>>> a955f3f563dc387e0cc0a2d11eacf79ce229a404
 // =====================
 // МОДАЛЬНОЕ ОКНО АВТОРИЗАЦИИ
 // =====================
@@ -445,8 +451,11 @@ function openOrderModal(serviceId, title, price) {
     document.getElementById('order-service-title').textContent = title;
     document.getElementById('order-service-price').textContent = Number(price).toLocaleString() + ' ₽';
     document.getElementById('order-details').value = '';
+<<<<<<< HEAD
     document.getElementById('order-time').value = '';
     document.getElementById('order-payment').value = '';
+=======
+>>>>>>> a955f3f563dc387e0cc0a2d11eacf79ce229a404
     document.getElementById('order-details-modal').style.display = 'flex';
 }
 
@@ -461,6 +470,7 @@ function closeSuccessOrderModal() {
 document.getElementById('form-order-submit').addEventListener('submit', async (e) => {
     e.preventDefault();
     const fd = new FormData(e.target);
+<<<<<<< HEAD
     const details = fd.get('details').trim();
     const orderTime = fd.get('order_time');
     const paymentType = fd.get('payment_type');
@@ -469,6 +479,8 @@ document.getElementById('form-order-submit').addEventListener('submit', async (e
     fd.delete('order_time');
     fd.delete('payment_type');
 
+=======
+>>>>>>> a955f3f563dc387e0cc0a2d11eacf79ce229a404
     const res = await api('api/requests.php', { method: 'POST', body: fd });
 
     if (res.success) {
@@ -822,7 +834,10 @@ async function saveStatus() {
 document.addEventListener('DOMContentLoaded', async () => {
     // Инициализация FAQ аккордеона
     initFaqAccordion();
+<<<<<<< HEAD
     initImageSlider();
+=======
+>>>>>>> a955f3f563dc387e0cc0a2d11eacf79ce229a404
 
     // Маска телефона
     const phoneInput = document.getElementById('reg-phone');
@@ -845,4 +860,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             initDashboard(info);
         }
     } catch (e) { /* Нет сессии — остаёмся на лендинге */ }
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> a955f3f563dc387e0cc0a2d11eacf79ce229a404

@@ -85,8 +85,11 @@ CREATE TABLE `reviews` (
 -- ДЕМО-ДАННЫЕ
 -- ============================================================
 -- Пароли (bcrypt): admin → Admin123 | client1 → Client123
+<<<<<<< HEAD
 -- Данные администратора меняются в первой строке INSERT ниже:
 -- login = 'admin', password = bcrypt-хеш пароля, fio/phone/email = данные админа.
+=======
+>>>>>>> a955f3f563dc387e0cc0a2d11eacf79ce229a404
 INSERT INTO `users` (`login`,`password`,`role`,`fio`,`phone`,`email`) VALUES
 ('admin',   '$2y$10$f4uZ4M9M/vtPpkos2HBIhuAfhGYNZv2TvCfLBdBkFnOuqjREMKzcK',
             'admin',  'Администратор Системы','+7(999)000-00-00','admin@example.com'),
